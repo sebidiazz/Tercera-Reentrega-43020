@@ -1,0 +1,221 @@
+@import "variables";
+
+.header {
+    border-bottom: $bordes;
+    border-top: $bordes;
+    cursor: pointer;
+    color: white;
+
+    .logo {
+        width: 80px;
+        border-radius: 10px
+    }
+
+    li,a {
+    margin: 0px 7px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: larger;
+}
+
+    nav {
+    display: flex;
+    align-content: space-between;
+}
+}
+
+.presentacion {
+    background-image: url(../img/fondo0.jpg);
+    object-fit: cover;
+}
+
+.main {
+    border-bottom: 3px solid red;
+    cursor: $cursor;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin-bottom: 40px;
+    padding: 5px 0px;
+    background-image: url(../img/fondo3db.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    h1 {
+        font-size: 200px;
+    }
+}
+
+.main2 {
+    border-bottom: 3px solid red;
+    cursor: $cursor;
+    color: black;
+    margin-bottom: 40px;
+    margin: 5px;
+  
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+.img {
+    width: 900px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    margin-top: 30px;
+}
+
+.titulo1 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+@mixin textos ($margin-bottom, $margin-top, $text-size-adjust){
+    font-size: 20px;
+    color: $colorTexto;
+    justify-content: center;
+    text-align: center;
+    max-width: 1300px;
+    margin: 0, auto;
+}
+
+.texto0 {
+    @include textos (60px, 40px)
+}
+
+.texto1 {
+    @include textos (0px)
+}
+
+.texto2 {
+    @include textos ( 65px, 65px)
+}
+
+.texto3 { 
+    @include textos (25px, 10px, auto)
+}
+
+.cuadro {
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.preguntas {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(150px, 1fr));
+    gap: 32px;
+
+    .preguntaFrecuente {
+        align-items: center;
+        text-align: center;
+        width: 28rem;
+        border-radius: 8px;
+    }
+}
+
+.card {
+  border-radius: 8px;
+  width: 28rem;
+  height: auto;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.imgCard {
+    width: 25rem;
+    height: 23rem;
+}
+
+.mapeado {
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa {
+    width: 100%;
+    height: 600px;
+    margin-top: 5px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 35px;
+}
+
+.listaClientes {
+    color: white;
+    font-size: larger;
+    text-align: start;
+    margin-top: 0px;
+    border: 2px solid white;
+}
+
+.formulario {
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 75%;
+}
+
+.tituloGrande {
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+}
+
+.tituloGrande1 {
+    font-size: 200px;
+    text-align: center;
+    color: white;
+}
+
+.listado {
+    border: 6px black;
+    border-radius: 10px;
+    margin-top: 79px;
+}
+
+.lista {
+    border: 2px solid white;
+    border-radius: 8px;
+    color: red;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    justify-content: space-between;
+    background-color: red;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    gap: 1rem;
+}
+
+.btnArriba {
+    color: white;
+    width: 1rem;
+    height: 1rem;
+}
+
+footer {
+    color: white;
+}
